@@ -1,10 +1,10 @@
-Reading the Bad-Block-Table on Linux
+# Reading the Bad-Block-Table on Linux
 
 Adopted from busybox. Inspired by Valentine R.
 (http://lists.infradead.org/pipermail/linux-mtd/2007-November/019830.html)
 
 
-Cross-compile with:
+## Cross-compile with:
 
 $ CROSS_COMPILE="/opt/cl-ng-powerpc/bin/powerpc-e500v2-linux-gnuspe-" make
 /opt/cl-ng-powerpc/bin/powerpc-e500v2-linux-gnuspe-gcc -Wall -Werror -c -o main.o main.c
@@ -13,9 +13,9 @@ $
 
 
 
-Example Output:
+## Example Output:
 
-# ./bbinfo -v /dev/mtd5
+$ ./bbinfo -v /dev/mtd5
 /dev/mtd5: Checking 0x00000000-0x00500000 for bad blocks:
   0x00000000 is clean.
   0x00020000 is clean.
